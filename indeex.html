@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern Personal Blog</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <header>
+    <h1>Adventurous Ideas</h1>
+    <p>Inspiration, Technology, Travel, and Great Food</p>
+  </header>
+  <section class="controls">
+    <div>
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="tech">Tech</option>
+        <option value="travel">Travel</option>
+        <option value="food">Food</option>
+      </select>
+    </div>
+    <div>
+      <label for="search">Search:</label>
+      <input id="search" placeholder="Post title..." type="text" />
+    </div>
+  </section>
+  <section id="posts" class="posts-grid"></section>
+  <section class="pagination">
+    <button id="prev" disabled>&larr; Prev</button>
+    <span id="page-info"></span>
+    <button id="next" disabled>Next &rarr;</button>
+  </section>
+  <footer>
+    <p>&copy; 2025 Adventurous Ideas &middot; Inspiring minds, one story at a time.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
